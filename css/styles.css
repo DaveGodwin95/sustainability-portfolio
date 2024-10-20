@@ -324,4 +324,48 @@ footer {
   .home-content p {
     font-size: 18px;
   }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+  }
+}
+
+/* Media Query for Smaller Screens (1 Column) */
+@media (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* Change to 1 column on smaller screens */
+  }
+
+  header {
+    display: grid;
+  }
+
+  #about {
+    padding: 20px 8px;
+    background-color: #90b49f;
+    text-align: center;
+  }
+
+  .about-content {
+    padding: 10px 8px;
+  }
+
+  nav {
+    flex-direction: column; /* Stack everything vertically */
+    align-items: center; /* Align items to the left */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Add some spacing after the profile picture and name */
+  }
+
+  .nav-links {
+    flex-direction: row; /* Keep the nav links horizontal */
+    margin-bottom: 20px; /* Add spacing after the nav links */
+  }
+
+  .social-icons {
+    justify-content: center; /* Align social icons to the left */
+    margin-top: 20px;
+  }
 }
