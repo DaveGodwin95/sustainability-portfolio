@@ -150,26 +150,26 @@ nav ul li a:hover {
 
 /* About Section */
 #about {
-  padding: 60px 20px;
+  padding: 20px 20px;
   background-color: #90b49f;
   text-align: center;
 }
 
 #about h2 {
   font-size: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #02382d;
 }
 
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 
 .about-content {
   /* background-color: white; */
-  padding: 40px;
+  padding: 10px 20px;
   border-radius: 10px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
@@ -190,13 +190,14 @@ nav ul li a:hover {
 
 .about-content ul {
   /* list-style-type: disc; */
-  margin-left: 20px;
+/*   margin-left: 20px; */
   color: #070606;
+  list-style-type: none;
 }
 
 .about-content ul li {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .about-content strong {
@@ -341,13 +342,14 @@ footer {
   }
 
   #about {
-    padding: 20px 8px;
+    padding: 8px 6px;
     background-color: #90b49f;
     text-align: center;
   }
 
   .about-content {
-    padding: 10px 8px;
+    padding: 6px 8px;
+    font-size: 13px;
   }
 
   nav {
@@ -368,4 +370,12 @@ footer {
     justify-content: center; /* Align social icons to the left */
     margin-top: 20px;
   }
+
+  .project-item img {
+    display: none; /* Hide images on screens less than 768px */
+    }
+
+  .project-item:hover {
+  transform: none; /* Slight lift on hover */
+    }
 }
